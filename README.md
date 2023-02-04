@@ -1,2 +1,1 @@
-# electron-movies
-desktop application made with electron and API handling
+# Mi primera aplicacion con electron y Node JS

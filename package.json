@@ -1,0 +1,25 @@
+{
+  "name": "electron-movies",
+  "version": "1.0.0",
+  "description": "desktop application made with electron and API handling",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Noriega402/electron-movies.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Noriega402/electron-movies/issues"
+  },
+  "homepage": "https://github.com/Noriega402/electron-movies#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "electron": "^22.2.0"
+  }
+}
