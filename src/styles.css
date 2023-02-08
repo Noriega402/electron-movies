@@ -1,4 +1,67 @@
-body{
-    background-color: #333;
-    color: #eee;
+:root{
+    --primary: #042940;
+    --secondary: #005C53;
+    --thirth: #9FC131;
+    --fourth: #DBF227;
+    --five: #D6D58E;
+    --white: #eeeeee;
+    --black: #222222;
+    --sm: 12px;
+    --md: 16px;
+    --lg: 22px;
+    --xl: 26px;
+    --inter: 'Inter', sans-serif;
+    --roboto: 'Roboto', sans-serif;
 }
+*{
+    box-sizing: border-box;
+}
+html{
+    background-color: var(--primary);
+    color: var(--white);
+}
+header{
+    height: 80px;
+}
+header nav #menu{
+    font-family: var(--roboto);
+    font-weight: bold;
+    font-size: var(--lg);
+    width: auto;
+    height: 100%; /*Ocupar el 100% del contenedor padre */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav #menu #menu-right{
+    padding-right: 16px;
+}
+header nav #menu #menu-left{
+    text-transform: uppercase;
+    margin-left: var(--lg);
+    cursor: pointer;
+}
+header nav #menu #menu-right > ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none; /*Eliminar las viñetas*/
+}
+header nav #menu #menu-right > ul li a{
+    color: var(--white);
+    text-decoration: none; /*Quitar el subrayado*/
+    font-family: var(--inter);
+    font-size: var(--md);
+    padding: 10px;
+    transition: .5s background;
+    border-radius: 6px;
+}
+header nav #menu #menu-right > ul li{
+    margin-right: var(--lg);
+}
+header nav #menu #menu-right > ul li a:hover{
+    background-color: var(--thirth);
+    transition: .5s background;
+    color: var(--black);
+}
+
+/* MOBILE */
