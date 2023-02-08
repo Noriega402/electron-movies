@@ -13,8 +13,8 @@ app.on('window-all-closed', function(){//si se cierra la pestaña => parar el pr
 
 function createWindow(){ //crear una ventana
     main = new BrowserWindow({ //agregando propiedades
-        width: 800,
-        height: 700,
+        width: 1000,
+        height: 800,
         webPreferences: { //opcion para cargar archivos antes de crear la ventana
             nodeIntegration: true, //agregar node dentro de la consola de la app
             preload: path.join(__dirname,'/src/main.js'),
