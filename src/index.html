@@ -5,15 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'none'"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;700&family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css">
     <title>Movie DB</title>
 </head>
 <body>
-    <h1>Electron + Node JS + API REST</h1>
+    <header>
+        <nav>
+            <div class="hamburger hamburger--spring js-hamburger" id="hamburger">
+                <div class="hamburger-box">
+                    <div class="hamburger-inner"></div>
+                </div>
+            </div>
+            </div>
+            <div id="menu" class="hidden">
+                <div id="menu-left">The movie denc</div>
+                <div id="menu-right">
+                    <ul>
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">Genders</a>
+                        </li>
+                        <li>
+                            <a href="#">Popular</a>
+                        </li>
+                        <li>
+                            <a href="#">Category</a>
+                        </li>
+                        <li>
+                            <a href="#">Companys</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
-    <div id="container"></div>
-    <br>
-    <button type="button" class="btn">GET DATA</button>
+    <!-- <div id="containxer"></div> -->
+    <!-- <br> -->
+    <!-- <button type="button" class="btn">GET DATA</button> -->
 
     <script src="./renderer.js"></script>
 </body>
